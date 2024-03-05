@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+</head>
+<body>
+    <form action = "scripts/data.php" method = "post/get" enctype = "multipart/form-data">
+        <label for = "student_name">Name: </label>
+        <input type="text" name = "student_name" id = "student_name">
+        <br>
+        <label for = "email_address">Email: </label>
+        <input type="email" name = "email_address" id = "email_address">
+        <br>
+
+        <textarea name="bio" id="bio" rows="25" cols="60">
+            Enter your bio here.
+        </textarea>
+        <br>
+        <fielset>
+            <legend>Subjects</legend>
+            <input type="checkbox" name="subjects" id="subjects" value="english" checked>
+            <label for="english">English</label>
+            <br>
+            <input type="checkbox" name="subjects" id="subjects" value="science" >
+            <label for="science">Science</label>
+            <br>
+            <input type="checkbox" name="subjects" id="subjects" value="social" >
+            <label for="social">Social</label>
+            <br>
+            <input type="checkbox" name="subjects" id="subjects" value="math" >
+            <label for="math">Math</label>
+            <br>
+        </fielset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+            <br>
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="Female">Female</label>
+        </fieldset>
+        <label>Classes:</label>
+        <select name="classes" id="classes">
+            <option value="">select your preferred class</option>
+            <option value="Physical">Physical</option>
+            <option value="Virtual">Virtual</option>
+        </select>
+        <br>
+        <label for="passport_photo">Passport photo:</label>
+        <input type="file" id="passport_photo" name="passport_photo" accept=".docs">
+        <br>
+        <input type="button" id="btn_ok" name="btn_ok" value="OK!" onclick="">
+        <br>
+        <input type="reset" id="clear" name="clear" value="Clear Form">
+        <br>
+        <input type="submit" id="submit" name="submit" value="Register">
+    </form>    
+</body>
+</html>
